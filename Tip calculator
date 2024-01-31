@@ -1,0 +1,9 @@
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+print("WELCOME TO PEACE'S TIP CALCULATOR!!!!" )
+bill = float(input('What is the bill? \n'))
+totaltip = int(input('How much tip would you like to give? 10 12 or 15\n'))
+number_of_people = int(input('How many people are sharing the bill?\n'))
+tip = totaltip / 100
+payment = ( bill / number_of_people) * tip
+payment = (round(payment, 2))
+print(f'Each person should pay: {payment}')
